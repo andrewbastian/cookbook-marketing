@@ -3,26 +3,40 @@ a{
   padding-right: 2rem;
   text-decoration: none;
   color: @1020;
+
+  @media @phone {
+    padding: 10px;
+    margin-right: 40px;
+    text-decoration: blink;
+    font-size: 3rem;
+  }
 }
 
 .navBox{
   display: flex;
   justify-content: flex-end;
   padding-right: 8rem;
-  }
+}
 
 h1, p, .midPageTxt{
   .flexCenter();
 }
+
 .h1Mission{
   border-bottom: 1.5px solid @1020;
   padding-bottom: 3rem;
   margin-bottom: 1rem;
 }
+
 h1{
   padding-bottom: 2rem;
   padding-top: 3rem;
+
+  @media @phone {
+  padding-top: 2rem;
+  }
 }
+
 .midPageTxt{
   border-top: 1.5px solid @1020;
   padding-top: 3rem;
@@ -33,15 +47,35 @@ h1{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+  @media @phone {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
-.photoPbox{
+.photoPbox {
   width: 35rem;
   height: auto;
   // border: 2px solid green;
 }
-img{
+
+.photoPbox img {
+  @media @phone {
+    margin: 10px auto;
+  }
+}
+
+img {
   width: 100%;
+}
+
+h3 {
+  @media @phone {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
 }
 
 .btn-center{
@@ -59,14 +93,27 @@ button{
   border-top: 1.5px solid @1020;
   padding-top: 3rem;
   margin-bottom: 2rem;
+
+  @media @phone {
+    height: 260px;
+  }
 }
+
 .imgText{
 position: absolute;
  top: 35%;
  left: 50%;
  transform: translate(-50%, -50%);
 
+ @media @phone {
+  width: 100%;
 }
+}
+
 .imgText h2 {
   color: @Kitty-boots;
+
+  @media @phone {
+    margin-top: 50px;
+  }
 }
