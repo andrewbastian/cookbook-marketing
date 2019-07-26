@@ -3,8 +3,12 @@
     text-shadow: inherit;
   }
   to {
-    text-shadow: 2px 2px #5E6164;
+    text-shadow: 2px 2px #BA906D;
   }
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -142,24 +146,114 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: black;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+}
+h1 {
+  font-size: 7rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 4.5rem;
 }
 h3 {
-  font-size: 2.8rem;
+  font-size: 3.5rem;
 }
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: black;
+}
+a {
+  font-size: 2rem;
+  padding-right: 2rem;
+  text-decoration: none;
+  color: #7B3D4C;
+}
+.navBox {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 8rem;
+}
+h1,
+p,
+.midPageTxt {
+  display: flex;
+  justify-content: center;
+}
+.h1Mission {
+  border-bottom: 1.5px solid #7B3D4C;
+  padding-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+h1 {
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+}
+.midPageTxt {
+  border-top: 1.5px solid #7B3D4C;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
+}
+.artsBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.photoPbox {
+  width: 35rem;
+  height: auto;
+}
+img {
+  width: 100%;
+}
+.btn-center {
+  display: flex;
+  justify-content: center;
+}
+button {
+  border-radius: 1rem;
+  font-size: 2rem;
+  width: 50%;
+  background-color: #919A87;
+  color: white;
+  height: 6rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.fullImgTxt {
+  position: relative;
+  text-align: center;
+  color: white;
+  border-top: 1.5px solid #7B3D4C;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
+}
+.imgText {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.imgText h2 {
+  color: #F0EADF;
 }

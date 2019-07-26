@@ -1,0 +1,72 @@
+a{
+  font-size: 2rem;
+  padding-right: 2rem;
+  text-decoration: none;
+  color: @1020;
+}
+
+.navBox{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 8rem;
+  }
+
+h1, p, .midPageTxt{
+  .flexCenter();
+}
+.h1Mission{
+  border-bottom: 1.5px solid @1020;
+  padding-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+h1{
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+}
+.midPageTxt{
+  border-top: 1.5px solid @1020;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.artsBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.photoPbox{
+  width: 35rem;
+  height: auto;
+  // border: 2px solid green;
+}
+img{
+  width: 100%;
+}
+
+.btn-center{
+  .flexCenter();
+}
+button{
+  .btn-mixin();
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+.fullImgTxt{
+  position: relative;
+  text-align: center;
+  color: white;
+  border-top: 1.5px solid @1020;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
+}
+.imgText{
+position: absolute;
+ top: 35%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+
+}
+.imgText h2 {
+  color: @Kitty-boots;
+}
