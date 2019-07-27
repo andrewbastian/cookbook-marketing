@@ -162,40 +162,64 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.topnav {
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.overlay a {
+  padding: 0;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: flex;
+  flex-direction: row;
+  transition: 0.3s;
+}
+span {
   display: flex;
   justify-content: center;
-  overflow: hidden;
-  background-color: #7B3D4C;
-  position: relative;
+  padding-top: 3rem;
 }
-.topnav #mylinks {
-  display: none;
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
 }
-.topnav a {
-  color: white:inherit;
-  padding: 1.4rem 1.6rem;
-  text-decoration: none;
-  font-size: 17px;
-  display: inline-block;
-}
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: black;
-  display: inline-block;
+.overlay .closebtn {
   position: absolute;
-  right: 0;
-  top: 0;
+  top: 2px;
+  right: 45px;
+  font-size: 60px;
 }
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-/* Style the active link (or home/logo) */
-.active {
-  background-color: #4CAF50;
-  color: white;
+@media (max-width: 500px) {
+  .overlay {
+    overflow-y: auto;
+  }
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 footer {
   display: flex;
@@ -210,6 +234,14 @@ footer {
   margin: 5px 2px;
   color: black;
 }
+img .line {
+  border: 2px solid black;
+}
+.navBox {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 8rem;
+}
 h1,
 p,
 .midPageTxt {
@@ -217,7 +249,6 @@ p,
   justify-content: center;
 }
 .h1Mission {
-  border-bottom: 1.5px solid #7B3D4C;
   padding-bottom: 3rem;
   margin-bottom: 1rem;
 }
@@ -226,8 +257,6 @@ h1 {
   padding-top: 3rem;
 }
 .midPageTxt {
-  border-top: 1.5px solid #7B3D4C;
-  padding-top: 3rem;
   margin-bottom: 2rem;
 }
 .artsBox {
@@ -249,6 +278,9 @@ img {
   border-top: 1.5px solid #7B3D4C;
   padding-top: 3rem;
   margin-bottom: 2rem;
+  border-bottom: 1.5px solid #7B3D4C;
+  padding-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .imgText {
   position: absolute;
@@ -258,4 +290,54 @@ img {
 }
 .imgText h2 {
   color: #F0EADF;
+}
+.pAbout {
+  padding-top: 10rem;
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */
+}
+.pAbout a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.pAbout a:hover {
+  color: #f1f1f1;
+}
+.pAbout .closeAbout {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.openAbout {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+.openAbout:hover {
+  background-color: #444;
 }
