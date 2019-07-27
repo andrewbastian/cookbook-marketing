@@ -1,3 +1,7 @@
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
 @keyframes headcolor {
   from {
     text-shadow: inherit;
@@ -5,10 +9,6 @@
   to {
     text-shadow: 2px 2px #BA906D;
   }
-}
-.flexCenter {
-  display: flex;
-  justify-content: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -149,6 +149,13 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
   color: black;
 }
+@media (max-width: 500px) {
+  html,
+  body {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
 h1,
 h2,
 h3,
@@ -163,12 +170,23 @@ h1 {
 h2 {
   font-size: 4.5rem;
 }
+@media (max-width: 800px) {
+  h2 {
+    font-size: 6rem;
+  }
+}
 h3 {
   font-size: 3.5rem;
 }
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+@media (max-width: 800px) {
+  p {
+    width: 85%;
+    margin: 20px auto;
+  }
 }
 footer {
   display: flex;
@@ -189,10 +207,37 @@ a {
   text-decoration: none;
   color: #7B3D4C;
 }
+@media (max-width: 500px) {
+  a {
+    padding: 5px;
+    margin-right: 40px;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  a {
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 2.5rem;
+  }
+}
 .navBox {
   display: flex;
   justify-content: flex-end;
   padding-right: 8rem;
+  margin-top: 18px;
+}
+@media (max-width: 500px) {
+  .navBox {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .navBox {
+    display: flex;
+    justify-content: center;
+  }
 }
 h1,
 p,
@@ -209,6 +254,16 @@ h1 {
   padding-bottom: 2rem;
   padding-top: 3rem;
 }
+@media (max-width: 500px) {
+  h1 {
+    padding-top: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 10rem;
+  }
+}
 .midPageTxt {
   border-top: 1.5px solid #7B3D4C;
   padding-top: 3rem;
@@ -219,12 +274,50 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .artsBox {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .artsBox {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
 .photoPbox {
   width: 35rem;
   height: auto;
 }
+@media (max-width: 800px) {
+  .photoPbox {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .photoPbox img {
+    margin: 10px auto;
+  }
+}
 img {
   width: 100%;
+}
+@media (max-width: 500px) {
+  h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 800px) {
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 6rem;
+  }
 }
 .btn-center {
   display: flex;
@@ -248,12 +341,34 @@ button {
   padding-top: 3rem;
   margin-bottom: 2rem;
 }
+@media (max-width: 500px) {
+  .fullImgTxt {
+    height: 260px;
+  }
+}
 .imgText {
   position: absolute;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 500px) {
+  .imgText {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .imgText {
+    height: 100px;
+    width: 80%;
+  }
+}
 .imgText h2 {
-  color: #F0EADF;
+  color: #EDC765;
+  text-shadow: 2px 2px #000000;
+}
+@media (max-width: 500px) {
+  .imgText h2 {
+    margin-top: 50px;
+  }
 }
