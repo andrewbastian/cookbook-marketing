@@ -267,46 +267,6 @@ h1 {
 .midPageTxt {
   margin-bottom: 2rem;
 }
-.artsBox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.aboutBox {
-  display: flex;
-  flex-direction: column;
-}
-.photoPbox {
-  width: 33rem;
-  height: auto;
-}
-.teamBox {
-  width: 100%
-  height: auto;
-  display: flex;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-.teamBox img {
-  padding-right: 1rem;
-}
-img {
-  width: 100%;
-}
-.btn-center {
-  display: flex;
-  justify-content: center;
-}
-button {
-  border-radius: 1rem;
-  font-size: 2rem;
-  width: 50%;
-  background-color: #919A87;
-  color: white;
-  height: 6rem;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
-}
 .fullImgTxt {
   position: relative;
   text-align: center;
@@ -329,4 +289,51 @@ button {
 }
 .pAbout {
   padding-top: 10rem;
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */
+}
+.pAbout a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.pAbout a:hover {
+  color: #f1f1f1;
+}
+.pAbout .closeAbout {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.openAbout {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+.openAbout:hover {
+  background-color: #444;
 }
