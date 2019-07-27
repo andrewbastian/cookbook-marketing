@@ -3,6 +3,7 @@ a{
   padding-right: 2rem;
   text-decoration: none;
   color: @1020;
+  font-size: 2.25rem;
 }
 
 .navBox{
@@ -34,11 +35,25 @@ h1{
   flex-direction: row;
   justify-content: space-around;
 }
+.aboutBox{
+  display:flex;
+  flex-direction: column;
+}
 
 .photoPbox{
-  width: 35rem;
+  width: 33rem;
   height: auto;
   // border: 2px solid green;
+}
+.teamBox{
+  width: 100%
+  height: auto;
+  display: flex;
+padding-top: 3rem;
+padding-bottom: 3rem;
+}
+.teamBox img{
+  padding-right: 1rem;
 }
 img{
   width: 100%;
@@ -59,6 +74,9 @@ button{
   border-top: 1.5px solid @1020;
   padding-top: 3rem;
   margin-bottom: 2rem;
+  border-bottom: 1.5px solid @1020;
+  padding-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .imgText{
 position: absolute;

@@ -188,6 +188,7 @@ a {
   padding-right: 2rem;
   text-decoration: none;
   color: #7B3D4C;
+  font-size: 2.25rem;
 }
 .navBox {
   display: flex;
@@ -219,9 +220,23 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
 }
+.aboutBox {
+  display: flex;
+  flex-direction: column;
+}
 .photoPbox {
-  width: 35rem;
+  width: 33rem;
   height: auto;
+}
+.teamBox {
+  width: 100%
+  height: auto;
+  display: flex;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.teamBox img {
+  padding-right: 1rem;
 }
 img {
   width: 100%;
@@ -247,6 +262,9 @@ button {
   border-top: 1.5px solid #7B3D4C;
   padding-top: 3rem;
   margin-bottom: 2rem;
+  border-bottom: 1.5px solid #7B3D4C;
+  padding-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 .imgText {
   position: absolute;
