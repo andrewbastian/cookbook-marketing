@@ -1,11 +1,3 @@
-@keyframes headcolor {
-  from {
-    text-shadow: inherit;
-  }
-  to {
-    text-shadow: 2px 2px #BA906D;
-  }
-}
 .flexCenter {
   display: flex;
   justify-content: center;
@@ -170,6 +162,41 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+.topnav {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #7B3D4C;
+  position: relative;
+}
+.topnav #mylinks {
+  display: none;
+}
+.topnav a {
+  color: white:inherit;
+  padding: 1.4rem 1.6rem;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
+}
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
 footer {
   display: flex;
   justify-content: center;
@@ -182,17 +209,6 @@ footer {
   text-decoration: none;
   margin: 5px 2px;
   color: black;
-}
-a {
-  font-size: 2rem;
-  padding-right: 2rem;
-  text-decoration: none;
-  color: #7B3D4C;
-}
-.navBox {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 8rem;
 }
 h1,
 p,
@@ -225,20 +241,6 @@ h1 {
 }
 img {
   width: 100%;
-}
-.btn-center {
-  display: flex;
-  justify-content: center;
-}
-button {
-  border-radius: 1rem;
-  font-size: 2rem;
-  width: 50%;
-  background-color: #919A87;
-  color: white;
-  height: 6rem;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
 }
 .fullImgTxt {
   position: relative;
