@@ -242,6 +242,9 @@ footer {
   margin: 5px 2px;
   color: black;
 }
+img .line {
+  border: 2px solid black;
+}
 .navBox {
   display: flex;
   justify-content: flex-end;
@@ -254,7 +257,6 @@ p,
   justify-content: center;
 }
 .h1Mission {
-  border-bottom: 1.5px solid #7B3D4C;
   padding-bottom: 3rem;
   margin-bottom: 1rem;
 }
@@ -263,8 +265,6 @@ h1 {
   padding-top: 3rem;
 }
 .midPageTxt {
-  border-top: 1.5px solid #7B3D4C;
-  padding-top: 3rem;
   margin-bottom: 2rem;
 }
 .artsBox {
@@ -326,4 +326,7 @@ button {
 }
 .imgText h2 {
   color: #F0EADF;
+}
+.pAbout {
+  padding-top: 10rem;
 }
