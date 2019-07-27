@@ -166,13 +166,15 @@ h5 {
 }
 h1 {
   font-size: 7rem;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
 }
 h2 {
   font-size: 4.5rem;
 }
 @media (max-width: 800px) {
   h2 {
-    font-size: 6rem;
+    font-size: 4.5rem;
   }
 }
 h3 {
@@ -235,8 +237,7 @@ a {
 }
 @media (max-width: 800px) {
   .navBox {
-    display: flex;
-    justify-content: center;
+    margin-left: 100px;
   }
 }
 h1,
@@ -249,20 +250,6 @@ p,
   border-bottom: 1.5px solid #7B3D4C;
   padding-bottom: 3rem;
   margin-bottom: 1rem;
-}
-h1 {
-  padding-bottom: 2rem;
-  padding-top: 3rem;
-}
-@media (max-width: 500px) {
-  h1 {
-    padding-top: 2rem;
-  }
-}
-@media (max-width: 800px) {
-  h1 {
-    font-size: 10rem;
-  }
 }
 .midPageTxt {
   border-top: 1.5px solid #7B3D4C;
@@ -369,6 +356,6 @@ button {
 }
 @media (max-width: 500px) {
   .imgText h2 {
-    margin-top: 50px;
+    font-size: 4rem;
   }
 }
