@@ -3,26 +3,45 @@ a{
   padding-right: 2rem;
   text-decoration: none;
   color: @1020;
+
+  @media @phone {
+    padding: 5px;
+    margin-right: 40px;
+    font-size: 3rem;
+  }
+
+  @media @tablet {
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 2.5rem;
+  }
 }
 
 .navBox{
   display: flex;
   justify-content: flex-end;
   padding-right: 8rem;
+  margin-top: 18px;
+
+  @media @phone {
+    .flexCenter();
   }
+
+  @media @tablet {
+    margin-left: 100px;
+  }
+}
 
 h1, p, .midPageTxt{
   .flexCenter();
 }
+
 .h1Mission{
   border-bottom: 1.5px solid @1020;
   padding-bottom: 3rem;
   margin-bottom: 1rem;
 }
-h1{
-  padding-bottom: 2rem;
-  padding-top: 3rem;
-}
+
 .midPageTxt{
   border-top: 1.5px solid @1020;
   padding-top: 3rem;
@@ -33,15 +52,52 @@ h1{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+  @media @phone {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  @media @tablet {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
 }
 
-.photoPbox{
+.photoPbox {
   width: 35rem;
   height: auto;
   // border: 2px solid green;
+
+  @media @tablet {
+    width: 75%;
+  }
 }
-img{
+
+.photoPbox img {
+  @media @phone {
+    margin: 10px auto;
+  }
+}
+
+img {
   width: 100%;
+}
+
+h3 {
+  @media @phone {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  @media @tablet {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 6rem;
+  }
 }
 
 .btn-center{
@@ -59,14 +115,33 @@ button{
   border-top: 1.5px solid @1020;
   padding-top: 3rem;
   margin-bottom: 2rem;
+
+  @media @phone {
+    height: 260px;
+  }
 }
+
 .imgText{
 position: absolute;
  top: 35%;
  left: 50%;
  transform: translate(-50%, -50%);
 
+ @media @phone {
+  width: 100%;
 }
+
+  @media @tablet {
+    height: 100px;
+    width: 80%;
+  }
+}
+
 .imgText h2 {
-  color: @Kitty-boots;
+  color: @pineapple;
+  text-shadow: 2px 2px #000000;
+
+  @media @phone {
+    font-size: 4rem;
+  }
 }
