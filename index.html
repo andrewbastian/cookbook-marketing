@@ -8,19 +8,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/index.css" type="text/css" rel="stylesheet"/>
     <script src="less.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      /* Open */
+      function openNav() {
+        document.getElementById("myNav").style.height = "5%";
+      }
+
+      /* Close */
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
+    </script>
+
   </head>
 
   <body class="home">
 
-<div class="navBox">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
 
 
-    <nav>
-      <a href="about.html">about us</a>
-      <a href="#">contact</a>
-    </nav>
-
-</div>
 <div class="h1Mission">
 
 
