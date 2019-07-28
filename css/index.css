@@ -2,6 +2,14 @@
   display: flex;
   justify-content: center;
 }
+@keyframes headcolor {
+  from {
+    text-shadow: inherit;
+  }
+  to {
+    text-shadow: 2px 2px #BA906D;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -141,6 +149,13 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
   color: black;
 }
+@media (max-width: 500px) {
+  html,
+  body {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
 h1,
 h2,
 h3,
@@ -151,9 +166,16 @@ h5 {
 }
 h1 {
   font-size: 7rem;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
 }
 h2 {
   font-size: 4.5rem;
+}
+@media (max-width: 800px) {
+  h2 {
+    font-size: 4.5rem;
+  }
 }
 h3 {
   font-size: 3.5rem;
@@ -162,6 +184,7 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+<<<<<<< HEAD
 .overlay {
   height: 0%;
   width: 100%;
@@ -219,6 +242,12 @@ span {
     font-size: 40px;
     top: 15px;
     right: 35px;
+=======
+@media (max-width: 800px) {
+  p {
+    width: 85%;
+    margin: 20px auto;
+>>>>>>> 81cfaac4eb3f451f9deb4fa89e719d3f68de0dca
   }
 }
 footer {
@@ -237,10 +266,36 @@ footer {
 img .line {
   border: 2px solid black;
 }
+@media (max-width: 500px) {
+  a {
+    padding: 5px;
+    margin-right: 40px;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  a {
+    margin-left: 20px;
+    padding: 5px;
+    font-size: 2.5rem;
+  }
+}
 .navBox {
   display: flex;
   justify-content: flex-end;
   padding-right: 8rem;
+  margin-top: 18px;
+}
+@media (max-width: 500px) {
+  .navBox {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .navBox {
+    margin-left: 100px;
+  }
 }
 h1,
 p,
@@ -252,10 +307,6 @@ p,
   padding-bottom: 3rem;
   margin-bottom: 1rem;
 }
-h1 {
-  padding-bottom: 2rem;
-  padding-top: 3rem;
-}
 .midPageTxt {
   margin-bottom: 2rem;
 }
@@ -264,13 +315,68 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .artsBox {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .artsBox {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
 .photoPbox {
   width: 35rem;
   height: auto;
 }
+@media (max-width: 800px) {
+  .photoPbox {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .photoPbox img {
+    margin: 10px auto;
+  }
+}
 img {
   width: 100%;
 }
+<<<<<<< HEAD
+=======
+@media (max-width: 500px) {
+  h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 800px) {
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 6rem;
+  }
+}
+.btn-center {
+  display: flex;
+  justify-content: center;
+}
+button {
+  border-radius: 1rem;
+  font-size: 2rem;
+  width: 50%;
+  background-color: #919A87;
+  color: white;
+  height: 6rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+>>>>>>> 81cfaac4eb3f451f9deb4fa89e719d3f68de0dca
 .fullImgTxt {
   position: relative;
   text-align: center;
@@ -282,14 +388,36 @@ img {
   padding-bottom: 3rem;
   margin-bottom: 1rem;
 }
+@media (max-width: 500px) {
+  .fullImgTxt {
+    height: 260px;
+  }
+}
 .imgText {
   position: absolute;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media (max-width: 500px) {
+  .imgText {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .imgText {
+    height: 100px;
+    width: 80%;
+  }
+}
 .imgText h2 {
-  color: #F0EADF;
+  color: #EDC765;
+  text-shadow: 2px 2px #000000;
+}
+@media (max-width: 500px) {
+  .imgText h2 {
+    font-size: 4rem;
+  }
 }
 .pAbout {
   padding-top: 10rem;
