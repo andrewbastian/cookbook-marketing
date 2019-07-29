@@ -148,6 +148,7 @@ html,
 body {
   font-family: 'Open Sans Condensed', sans-serif;
   color: black;
+
 }
 @media (max-width: 500px) {
   html,
@@ -248,6 +249,21 @@ span {
     top: 15px;
     right: 35px;
   }
+}
+.aboutBox{
+  background-color: blue;
+}
+.teamBox{
+  border: 2px solid black;
+  height: 33rem;
+}
+.teamBox .openAbout{
+  height: 100%;
+}
+.teamBox .openAbout
+
+
+
 }
 footer {
   display: flex;
