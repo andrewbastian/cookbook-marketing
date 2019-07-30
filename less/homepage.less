@@ -21,7 +21,8 @@ a{
   display: flex;
   justify-content: center;
   padding-right: 8rem;
-  margin-top: 8px;
+  margin-top: 18px;
+
 
   @media @phone {
     .flexCenter();
@@ -85,6 +86,20 @@ h1, p, .midPageTxt{
 img {
   width: 100%;
   border-radius: 23px;
+}
+
+h3 {
+  @media @phone {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  @media @tablet {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 6rem;
+  }
 }
 
 h3 {
