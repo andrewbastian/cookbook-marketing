@@ -118,6 +118,7 @@ section {
 }
 body {
   line-height: 1;
+
 }
 ol,
 ul {
@@ -148,7 +149,7 @@ html,
 body {
   font-family: 'Open Sans Condensed', sans-serif;
   color: black;
-
+  background-color:#F0EADF;
 }
 @media (max-width: 500px) {
   html,
@@ -161,9 +162,11 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+.navbtn {
   font-family: 'Amatic SC', cursive;
   color: black;
+  text-shadow: 2px 2px #919A87;
 }
 h1 {
   font-size: 7rem;
@@ -222,7 +225,7 @@ p {
   flex-direction: row;
   transition: 0.3s;
 }
-span {
+.navbtn {
   display: flex;
   justify-content: center;
   padding-top: 3rem;
@@ -250,21 +253,60 @@ span {
     right: 35px;
   }
 }
-.aboutBox{
-  background-color: blue;
+/* profile side  */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
-.teamBox{
-  border: 2px solid black;
-  height: 33rem;
+.profilebtn img{
+  width: 65%;
 }
-.teamBox .openAbout{
-  height: 100%;
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
-.teamBox .openAbout
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closeX {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 
 
-}
 footer {
   display: flex;
   justify-content: center;
