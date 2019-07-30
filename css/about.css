@@ -2,14 +2,17 @@
   display: flex;
   justify-content: center;
 }
+
 @keyframes headcolor {
   from {
     text-shadow: inherit;
   }
+
   to {
     text-shadow: 2px 2px #BA906D;
   }
 }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -102,6 +105,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -116,17 +120,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -134,56 +142,72 @@ q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 * {
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
+
 html,
 body {
   font-family: 'Open Sans Condensed', sans-serif;
   color: black;
+  background-color: #F0EADF;
 }
+
 @media (max-width: 500px) {
+
   html,
   body {
     margin-right: 5px;
     margin-left: 5px;
   }
 }
+
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+.navbtn {
   font-family: 'Amatic SC', cursive;
   color: black;
+  text-shadow: 2px 2px #919A87;
 }
+
 h1 {
   font-size: 7rem;
   padding-bottom: 2rem;
   padding-top: 3rem;
 }
+
 h2 {
   font-size: 4.5rem;
 }
+
 @media (max-width: 800px) {
   h2 {
     font-size: 4.5rem;
   }
 }
+
 h3 {
   font-size: 3.5rem;
 }
+
 p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+
 @media (max-width: 800px) {
   p {
     width: 85%;
@@ -203,6 +227,7 @@ p {
   overflow-y: hidden;
   transition: 0.5s;
 }
+
 .overlay-content {
   position: relative;
   top: 25%;
@@ -213,6 +238,7 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 .overlay a {
   padding: 0;
   text-decoration: none;
@@ -222,28 +248,34 @@ p {
   flex-direction: row;
   transition: 0.3s;
 }
-span {
+
+.navbtn {
   display: flex;
   justify-content: center;
   padding-top: 3rem;
 }
+
 .overlay a:hover,
 .overlay a:focus {
   color: #f1f1f1;
 }
+
 .overlay .closebtn {
   position: absolute;
   top: 2px;
   right: 45px;
   font-size: 60px;
 }
+
 @media (max-width: 500px) {
   .overlay {
     overflow-y: auto;
   }
+
   .overlay a {
     font-size: 20px;
   }
+
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
@@ -251,10 +283,107 @@ span {
   }
 }
 
+
+a {
+  font-size: 2rem;
+  padding-right: 2rem;
+  text-decoration: none;
+  color: #7B3D4C;
+}
+
+
+h1,
+p,
+.midPageTxt {
+  display: flex;
+  justify-content: center;
+}
+
+.h1Mission {
+  border-bottom: 1.5px solid #7B3D4C;
+  padding-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+
+
+img {
+  width: 100%;
+  border-radius: 23px;
+}
+
+
+/* profile side  */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+
+}
+
+.profilebtn img {
+  width: 65%;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closeX {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav p{
+  color: white;
+
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+}
 footer {
   display: flex;
   justify-content: center;
 }
+
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -263,177 +392,4 @@ footer {
   text-decoration: none;
   margin: 5px 2px;
   color: black;
-}
-a {
-  font-size: 2rem;
-  padding-right: 2rem;
-  text-decoration: none;
-  color: #7B3D4C;
-}
-@media (max-width: 500px) {
-  a {
-    padding: 5px;
-    margin-right: 40px;
-    font-size: 3rem;
-  }
-}
-@media (max-width: 800px) {
-  a {
-    margin-left: 20px;
-    padding: 5px;
-    font-size: 2.5rem;
-  }
-}
-.navBox {
-  display: flex;
-  justify-content: center;
-  padding-right: 8rem;
-
-  margin-top: 18px;
-
-}
-@media (max-width: 500px) {
-  .navBox {
-    display: flex;
-    justify-content: center;
-  }
-}
-@media (max-width: 800px) {
-  .navBox {
-    margin-left: 100px;
-  }
-}
-h1,
-p,
-.midPageTxt {
-  display: flex;
-  justify-content: center;
-}
-.h1Mission {
-  border-bottom: 1.5px solid #7B3D4C;
-  padding-bottom: 3rem;
-  margin-bottom: 1rem;
-}
-.midPageTxt {
-  border-top: 1.5px solid #7B3D4C;
-  padding-top: 3rem;
-  margin-bottom: 2rem;
-}
-.artsBox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-@media (max-width: 500px) {
-  .artsBox {
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-}
-@media (max-width: 800px) {
-  .artsBox {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-  }
-}
-.photoPbox {
-  width: 35rem;
-  height: auto;
-}
-@media (max-width: 800px) {
-  .photoPbox {
-    width: 75%;
-  }
-}
-@media (max-width: 500px) {
-  .photoPbox img {
-    margin: 10px auto;
-  }
-}
-img {
-  width: 100%;
-  border-radius: 23px;
-}
-@media (max-width: 500px) {
-  h3 {
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-}
-@media (max-width: 800px) {
-  h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 6rem;
-  }
-}
-@media (max-width: 500px) {
-  h3 {
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-}
-@media (max-width: 800px) {
-  h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 6rem;
-  }
-}
-.btn-center {
-  display: flex;
-  justify-content: center;
-}
-button {
-  border-radius: 1rem;
-  font-size: 2rem;
-  width: 50%;
-  background-color: #919A87;
-  color: white;
-  height: 6rem;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
-}
-.fullImgTxt {
-  position: relative;
-  text-align: center;
-  color: white;
-  border-top: 1.5px solid #7B3D4C;
-  padding-top: 3rem;
-  margin-bottom: 2rem;
-}
-@media (max-width: 500px) {
-  .fullImgTxt {
-    height: 260px;
-  }
-}
-.imgText {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-@media (max-width: 500px) {
-  .imgText {
-    width: 100%;
-  }
-}
-@media (max-width: 800px) {
-  .imgText {
-    height: 100px;
-    width: 80%;
-  }
-}
-.imgText h2 {
-  color: #EDC765;
-  text-shadow: 2px 2px #000000;
-}
-@media (max-width: 500px) {
-  .imgText h2 {
-    font-size: 4rem;
-  }
 }
