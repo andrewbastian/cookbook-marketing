@@ -123,6 +123,8 @@ section {
 
 body {
   line-height: 1;
+  background-image: url("img/banan.jpg");
+  background-image: image(100%);
 }
 
 ol,
@@ -160,7 +162,7 @@ html,
 body {
   font-family: 'Open Sans Condensed', sans-serif;
   color: black;
-  background-color: #F0EADF;
+
 }
 
 @media (max-width: 500px) {
@@ -214,7 +216,6 @@ p {
     margin: 20px auto;
   }
 }
-
 .overlay {
   height: 0%;
   width: 100%;
