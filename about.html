@@ -148,24 +148,21 @@ function closeNav() {
 
 <script type="text/javascript">
 
-var profiles = document.getElementsByClassName('profilebtn');
-for (var i=0; i< profiles.length; i++){
-  profiles[i].onclick = open;
-}
-function open() {
-  var sidenavs = document.getElementsByClassName('sidenav');
-  for (var i=0; i< sidenavs.length; i++){
+var profiles = Array.from(document.getElementsByClassName('profilebtn'));
+let sidenavs = Array.from(document.getElementsByClassName('sidenav'));
+let mains = Array.from(document.getElementsByClassName('mains'));
+let order = 1;
+
+profiles.forEach((element, i)=> {
+  element.addEventListener('click', (event)=> {
     sidenavs[i].style.width = "250px";
+    sidenavs[i].style.zIndex = order++;
+    mains.forEach(element => element.style.marginLeft = "250px")
+  })
+})
 
-    var sidenavs = document.getElementsByClassName('mains');
-    for (var i=0; i< sidenavs.length; i++){
-      sidenavs[i].style.width = "250px";
-  console.log("clicked");
-}
-}
-}
 
-var profiles = document.getElementsByClassName("closeX");
+var profiles = Array.form(document.getElementsByClassName("closeX"));
 for (var i=0; i< profiles.length; i++){
     profiles[i].onclick = close;
   }
