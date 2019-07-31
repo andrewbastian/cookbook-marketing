@@ -178,8 +178,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-.navbtn {
+h5 {
   font-family: 'Amatic SC', cursive;
   color: black;
   text-shadow: 2px 2px #919A87;
@@ -254,6 +253,8 @@ p {
   display: flex;
   justify-content: center;
   padding-top: 3rem;
+  margin-top: 40px;
+  text-shadow: 2px 2px #919A87;
 }
 
 .overlay a:hover,
@@ -326,7 +327,7 @@ img {
   top: 0;
   /* Stay at the top */
   left: 0;
-  background-color: #111;
+  background-color: #000;
   /* Black*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
