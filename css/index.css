@@ -190,7 +190,6 @@ p {
     margin: 20px auto;
   }
 }
-
 .overlay {
   height: 0%;
   width: 100%;
@@ -250,7 +249,6 @@ span {
     right: 35px;
   }
 }
-
 footer {
   display: flex;
   justify-content: center;
@@ -288,9 +286,7 @@ a {
   display: flex;
   justify-content: center;
   padding-right: 8rem;
-
   margin-top: 18px;
-
 }
 @media (max-width: 500px) {
   .navBox {
@@ -355,6 +351,11 @@ p,
 img {
   width: 100%;
   border-radius: 23px;
+}
+h3 {
+  width: 103%;
+  margin: 10px;
+  text-align: center;
 }
 @media (max-width: 500px) {
   h3 {
@@ -429,11 +430,16 @@ button {
   }
 }
 .imgText h2 {
-  color: #EDC765;
+  color: #F0EADF;
   text-shadow: 2px 2px #000000;
+  text-shadow: 3px 2px #000000;
+  font-size: 11.5rem;
 }
 @media (max-width: 500px) {
   .imgText h2 {
     font-size: 4rem;
   }
+}
+.aboutHome {
+  background-image: image("img/IMG_0808.jpg");
 }
