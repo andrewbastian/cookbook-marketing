@@ -190,7 +190,6 @@ p {
     margin: 20px auto;
   }
 }
-
 .overlay {
   height: 0%;
   width: 100%;
@@ -250,7 +249,6 @@ span {
     right: 35px;
   }
 }
-
 footer {
   display: flex;
   justify-content: center;
@@ -288,9 +286,7 @@ a {
   display: flex;
   justify-content: center;
   padding-right: 8rem;
-
   margin-top: 18px;
-
 }
 @media (max-width: 500px) {
   .navBox {
@@ -436,4 +432,7 @@ button {
   .imgText h2 {
     font-size: 4rem;
   }
+}
+.aboutHome {
+  background-image: image("img/IMG_0808.jpg");
 }
