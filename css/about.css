@@ -123,8 +123,7 @@ section {
 
 body {
   line-height: 1;
-  background-image: url("img/banan.jpg");
-  background-image: image(100%);
+  background-color: inherit;
 }
 
 ol,
