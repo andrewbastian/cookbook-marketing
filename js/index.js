@@ -1,5 +1,5 @@
 function openNav() {
-  document.getElementById("myNav").style.height = "5%";
+  document.getElementById("myNav").style.height = "10%";
 }
 
 /* Close */
