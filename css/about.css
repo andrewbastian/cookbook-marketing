@@ -51,8 +51,7 @@ section {
 
 body {
   line-height: 1;
-  background-image: url("img/banan.jpg");
-  background-image: image(100%);
+
 }
 
 ol,
@@ -143,6 +142,11 @@ p {
     margin: 20px auto;
   }
 }
+
+.backgroundColor{
+  background-color: #919A87;
+}
+
 .overlay {
   height: 0%;
   width: 100%;
@@ -233,6 +237,10 @@ p,
   border-bottom: 1.5px solid #7B3D4C;
   padding-bottom: 3rem;
   margin-bottom: 1rem;
+  position: absolute;
+   top: 25%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 
 
@@ -240,8 +248,15 @@ img {
   width: 100%;
   border-radius: 23px;
 }
-
-
+.gf{
+  border-radius: 0;
+  position: relative;
+  text-align: center;
+  color: white;
+  border-top: 1.5px solid @1020;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
+}
 /* profile side  */
 .sidenav {
   height: 100%;
