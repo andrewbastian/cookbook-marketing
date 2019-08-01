@@ -468,3 +468,10 @@ button {
     width: 100%;
   }
 }
+@media (max-width: 320px) {
+  .imgText h2 {
+    font-size: 3rem;
+    margin-top: 38px;
+    text-align: center;
+  }
+}
