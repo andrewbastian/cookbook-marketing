@@ -127,8 +127,23 @@ p {
   padding-top: 10rem;
 }
 
+@media (max-width: 800px) {
+  .h1Mission h1 {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .h1Mission h1 {
+    font-size: 8rem;
+    margin-top: 20px;
+}
+
+
 .h1Mission h1, p {
   color: #F0EADF;
+  margin-top: 0;
+  text-align: center;
 }
 
 
@@ -175,6 +190,12 @@ p {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+  .navbtn {
+    margin-bottom: 40px;
+  }
 }
 
 .overlay a:hover,
@@ -231,14 +252,17 @@ h1, p, .midPageTxt {
 
 @media (max-width: 800px) {
   .h1Mission{
-    top:14%;
+    top:45%;
     width: 80%;
   }
 }
-  @media (max-width: 500px) {
-    .h1Mission{
-      width: 100%;
-    }
+
+@media (max-width: 500px) {
+  .h1Mission {
+    top: 40%;
+    width: 100%;
+    border-bottom: none;
+  }
 }
 
 img {
@@ -257,6 +281,13 @@ img {
   margin-bottom: 2rem;
   margin-left: 16rem;
   width: 75%;
+}
+
+@media (max-width: 800px){
+  .gf {
+    width: 100%;
+    margin: 0px;
+  }
 }
 
 /* profile side  */
