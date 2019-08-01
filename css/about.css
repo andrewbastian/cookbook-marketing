@@ -13,56 +13,141 @@
   }
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
-/* End of Reset Code */
+body {
+  line-height: 1;
+
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
 * {
   box-sizing: border-box;
@@ -72,12 +157,15 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
+html,
+body {
   font-family: 'Open Sans Condensed', sans-serif;
   color: black;
+
 }
 
 @media (max-width: 500px) {
+
   html,
   body {
     margin-right: 5px;
@@ -85,14 +173,21 @@ html, body {
   }
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbtn {
   font-family: 'Amatic SC', cursive;
   color: black;
   text-shadow: 2px 2px #BA906D;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 7rem;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
 }
 
 h2 {
@@ -120,31 +215,8 @@ p {
     margin: 20px auto;
   }
 }
-
-.h1Mission h1 {
-  font-size: 18rem;
-  padding-bottom: 2rem;
-  padding-top: 10rem;
-}
-
-@media (max-width: 800px) {
-  .h1Mission h1 {
-    font-size: 7rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .h1Mission h1 {
-    font-size: 8rem;
-    margin-top: 20px;
-  }
-}
-
-
 .h1Mission h1, p {
   color: #F0EADF;
-  margin-top: 0;
-  text-align: center;
 }
 
 
@@ -190,13 +262,7 @@ p {
 .navbtn {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-}
-
-@media (max-width: 800px) {
-  .navbtn {
-    margin-bottom: 40px;
-  }
+  /* padding-top: 3rem; */
 }
 
 .overlay a:hover,
@@ -236,7 +302,9 @@ a {
 }
 
 
-h1, p, .midPageTxt {
+h1,
+p,
+.midPageTxt {
   display: flex;
   justify-content: center;
 }
@@ -246,51 +314,44 @@ h1, p, .midPageTxt {
   padding-bottom: 3rem;
   margin-bottom: 1rem;
   position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+   top: 25%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
-
 @media (max-width: 800px) {
   .h1Mission{
-    top:45%;
-    width: 80%;
+top:14%;
+width: 80%;
   }
 }
-
-@media (max-width: 500px) {
-  .h1Mission {
-    top: 40%;
-    width: 100%;
-    border-bottom: none;
-  }
+  @media (max-width: 500px) {
+    .h1Mission{
+      width: 100%;
+      border-bottom: none;
+    }
+    .h1Mission h1{
+      font-size: 5rem;
+      padding-bottom: 0;
+    }
+    .h1Mission p{
+      font-size: 1.2rem;
+      padding-top: 8px;
+    }
 }
 
 img {
   width: 100%;
   border-radius: 23px;
 }
-
-.gf {
-  border-radius: 2rem;
+.gf{
+  border-radius: 0;
   position: relative;
   text-align: center;
   color: white;
-  border-top: 1.5px solid #1020;
-  margin-top: 2rem;
-  margin-right: 16rem;
+  border-top: 1.5px solid @1020;
+  padding-top: 3rem;
   margin-bottom: 2rem;
-  margin-left: 16rem;
-  width: 75%;
 }
-
-@media (max-width: 800px){
-  .gf {
-    width: 100%;
-    margin: 0px;
-  }
-}
-
 /* profile side  */
 .sidenav {
   height: 100%;
@@ -312,6 +373,7 @@ img {
   /* Place content 60px from the top */
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */
+
 }
 
 .profilebtn img {
@@ -341,11 +403,10 @@ img {
   font-size: 36px;
   margin-left: 50px;
 }
-
 .sidenav p{
   color: white;
-}
 
+}
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
@@ -358,7 +419,6 @@ img {
     padding-top: 15px;
   }
 }
-
 footer {
   display: flex;
   justify-content: center;
