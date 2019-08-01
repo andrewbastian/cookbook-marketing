@@ -17,14 +17,86 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
-acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup,
-tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, figure, figcaption, footer, header,
-hgroup, menu, nav, output, ruby, section, summary, time, mark, audio,
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
 video {
   margin: 0;
   padding: 0;
@@ -105,7 +177,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+.navbtn {
   font-family: 'Amatic SC', cursive;
   color: black;
   text-shadow: 2px 2px #919A87;
@@ -145,6 +218,7 @@ p {
 
 .backgroundColor{
   background-color: #919A87;
+  padding-top: 3rem;
 }
 
 .overlay {
@@ -184,9 +258,7 @@ p {
 .navbtn {
   display: flex;
   justify-content: center;
-  padding-top: 3rem;
-  margin-top: 40px;
-  text-shadow: 2px 2px #919A87;
+  /* padding-top: 3rem; */
 }
 
 .overlay a:hover,
@@ -270,7 +342,7 @@ img {
   top: 0;
   /* Stay at the top */
   left: 0;
-  background-color: #000;
+  background-color: #111;
   /* Black*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
@@ -283,7 +355,6 @@ img {
 
 .profilebtn img {
   width: 65%;
-  image-orientation: 90deg;
 }
 
 /* The navigation menu links */
