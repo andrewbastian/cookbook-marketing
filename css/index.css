@@ -464,7 +464,7 @@ button {
 }
 @media (max-width: 500px) {
   .imgText h2 {
-    font-size: 8rem;
+    font-size: 6rem;
     width: 100%;
   }
 }
