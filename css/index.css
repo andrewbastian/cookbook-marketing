@@ -165,16 +165,34 @@ h5 {
   color: black;
 }
 h1 {
-  font-size: 7rem;
+  font-size: 12rem;
   padding-bottom: 2rem;
   padding-top: 3rem;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 12rem;
+    text-align: center;
+  }
 }
 h2 {
   font-size: 4.5rem;
 }
 @media (max-width: 800px) {
   h2 {
-    font-size: 4.5rem;
+    font-size: 8rem;
+  }
+}
+@media (max-width: 500px) {
+  h2 {
+    width: 75%;
+    text-align: center;
   }
 }
 h3 {
@@ -201,9 +219,6 @@ p {
   background-color: rgba(0, 0, 0, 0.9);
   overflow-y: hidden;
   transition: 0.5s;
-}
-.navbtn {
-  margin-top: 40px;
 }
 .overlay-content {
   position: relative;
@@ -252,6 +267,9 @@ span {
     right: 35px;
   }
 }
+.navbtn {
+  margin-top: 40px;
+}
 footer {
   display: flex;
   justify-content: center;
@@ -299,7 +317,7 @@ a {
 }
 @media (max-width: 800px) {
   .navBox {
-    margin-left: 100px;
+    margin-top: 6rem;
   }
 }
 h1,
@@ -372,6 +390,7 @@ h3 {
     margin-bottom: 10px;
     text-align: center;
     font-size: 6rem;
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
@@ -401,6 +420,11 @@ button {
   height: 6rem;
   margin-bottom: 3rem;
   margin-top: 3rem;
+}
+.btn-center a {
+  color: white;
+  text-decoration: none;
+  margin: 0px;
 }
 .fullImgTxt {
   position: relative;
@@ -440,6 +464,7 @@ button {
 }
 @media (max-width: 500px) {
   .imgText h2 {
-    font-size: 4rem;
+    font-size: 8rem;
+    width: 100%;
   }
 }

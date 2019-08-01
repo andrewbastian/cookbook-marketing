@@ -8,128 +8,93 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/about.css" type="text/css" rel="stylesheet"/>
     <script src="js/index.js" type="text/javascript" async></script>
-
   </head>
 
   <body class="aboutHome">
+    <div class="backgroundColor">
 
-
-<div class="backgroundColor">
-
-
-
-    <div id="myNav" class="overlay">
+    <nav id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
       </div>
+    </nav>
+
+    <span class="navbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+
+    <div class="img">
+      <img class= "gf" src="img/gf.jpg" alt="">
+    <div class="h1Mission">
+      <h1>about us</h1>
+      <p>These are the lovely people who have been working on the Secret Family Recipe Cookbook app and marketing webpage...</p>
     </div>
 
-<span class="navbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
-<div class="img">
-  <img class= "gf" src="img/gf.jpg" alt="">
-<div class="h1Mission">
+  <div class="profiles">
 
 
+  <!-- 1 -->
+  <div class= "mains" id="main">
+    <h2>Andrew Bastian</h2>
+    <span class="profilebtn" id="profile" style="font-size:30px;cursor:pointer">
+    <img src="img/andrew.jpg" alt=""></span>
 
-    <h1>about us</h1>
-      <p>These are the lovely people who have been working on the Secret Family Recipe Cookbook app and marketing webpage...</p>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closeX" id="x">&times;</a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <p>I'm Andrew. Ejoyed this 1st build week a lot. It has been satifying to dig into a bigger project.</p>
+    </div>
+  </div>
 
+  <!-- 2 -->
+  <div class="mains" id="main">
+    <h2>Barbara Mayfield</h2>
+    <span class="profilebtn" id="profile" style="font-size:30px;cursor:pointer">
+    <img src="img/IMG_1558_bm.JPG" alt="Profile Picture of Barbara Mayfield"></span>
+
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closeX" id="x">&times;</a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <p>"Hey there, I'm Barbara. I am a student studying Full Stack Web Development at Lambda School.
+    Our team created this landing page and the Secret Family Recipes Cookbook app."</p>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div  class= "mains" id="main">
+    <h2>Juan Reys</h2>
+    <span class="profilebtn" id="profile" style="font-size:30px;cursor:pointer">
+    <img src="img/Juan.jpg" alt=""></span>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closeX" id="x">&times;</a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <p>Juan has worked as a skydive instructor and is at Lambda because he can do it from home</p>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class= "mains" id="main">
+    <h2>Spencer Summrville</h2>
+
+    <span class="profilebtn" id="profile" style="font-size:30px;cursor:pointer">
+    <img src="img/fish.jpg" alt=""></span>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closeX" id="x">&times;</a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <p>Grew up in Blaine WA and is at Lambda because of the no upfront cost</p>
+    </div>
+  </div>
 </div>
 
-<div class="profiles">
 
-
-<!-- 1 -->
-<div class= "mains" id="main">
-<h2>Andrew Bastian</h2>
-
-
-
-
-<span class="profilebtn" id="profile" style="font-size:30px;cursor:pointer">
-  <img src="img/andrew.jpg" alt="">
-</span>
-
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closeX" id="x">&times;</a>
-  <a href="#" class="fa fa-twitter"></a>
-  <a href="#" class="fa fa-google"></a>
-  <a href="#" class="fa fa-linkedin"></a>
-  <p>I'm Andrew. Ejoyed this 1st build week a lot. It has been satifying to dig into a bigger project.</p>
-</div>
-
-</div>
-
-<!-- 2 -->
-<div class= "mains" id="main">
-
-<h2>Barbara Mayfield</h2>
-
-
-
-<span class="profilebtn" id="profile" style="font-size:30px;cursor:pointer">
-  <img src="img/IMG_1558_bm.JPG" alt="Profile Picture of Barbara Mayfield">
-</span>
-
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closeX" id="x">&times;</a>
-  <a href="#" class="fa fa-twitter"></a>
-  <a href="#" class="fa fa-google"></a>
-  <a href="#" class="fa fa-linkedin"></a>
-
-  <p>"Hey there, I'm Barbara. I am a student studying Full Stack Web Development at Lambda School.
-    Our team created this landing page and the Secret Family Recipes Cookbook app."
-  </p>
-</div>
-</div>
-
-<!-- 3 -->
-<div  class= "mains" id="main">
-<h2>Juan Reys</h2>
-
-
-
-
-<span class="profilebtn" id="profile" style="font-size:30px;cursor:pointer">
-  <img src="img/Juan.jpg" alt="">
-</span>
-
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closeX" id="x">&times;</a>
-  <a href="#" class="fa fa-twitter"></a>
-  <a href="#" class="fa fa-google"></a>
-  <a href="#" class="fa fa-linkedin"></a>
-  <p>Juan has worked as a skydive instructor and is at Lambda because he can do it from home</p>
-</div>
-</div>
-<!-- 4 -->
-<div class= "mains" id="main">
-<h2>Spencer Summrville</h2>
-
-
-
-
-<span class="profilebtn" id="profile" style="font-size:30px;cursor:pointer">
-  <img src="img/fish.jpg" alt="">
-</span>
-
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closeX" id="x">&times;</a>
-  <a href="#" class="fa fa-twitter"></a>
-  <a href="#" class="fa fa-google"></a>
-  <a href="#" class="fa fa-linkedin"></a>
-  <p>	Spencer grew up in Blaine WA and is at Lambda because of the no upfront cost</p>
-</div>
-</div>
-</div>
-</div>
 <footer>
 
   <a href="#" class="fa fa-facebook"></a>
@@ -140,51 +105,51 @@
 </footer>
 
 
-<!--nav bar  -->
-<script type="text/javascript">
+    <!--nav bar  -->
+    <script type="text/javascript">
 
-function openNav() {
-  document.getElementById("myNav").style.height = "80px";
-}
+      function openNav() {
+        document.getElementById("myNav").style.height = "10%";
+      }
 
-/* Close */
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
+      /* Close */
+      function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+      }
 
+    </script>
 
 // profile
-</script>
 
-<script type="text/javascript">
+    <script type="text/javascript">
 
-var profiles = Array.from(document.getElementsByClassName('profilebtn'));
-let sidenavs = Array.from(document.getElementsByClassName('sidenav'));
-let mains = Array.from(document.getElementsByClassName('mains'));
-let order = 1;
+    var profiles = Array.from(document.getElementsByClassName('profilebtn'));
+    let sidenavs = Array.from(document.getElementsByClassName('sidenav'));
+    let mains = Array.from(document.getElementsByClassName('mains'));
+    let order = 1;
 
-profiles.forEach((element, i)=> {
-  element.addEventListener('click', (event)=> {
-    sidenavs[i].style.width = "250px";
-    sidenavs[i].style.zIndex = order++;
-    mains.forEach(element => element.style.marginLeft = "250px")
-  })
-})
+    profiles.forEach((element, i)=> {
+      element.addEventListener('click', (event)=> {
+        sidenavs[i].style.width = "250px";
+        sidenavs[i].style.zIndex = order++;
+        mains.forEach(element => element.style.marginLeft = "250px")
+      })
+    })
 
 
-var x = Array.from(document.getElementsByClassName("closeX"));
-let sidenav = Array.from(document.getElementsByClassName('sidenav'));
-let main = Array.from(document.getElementsByClassName('mains'));
+    var x = Array.from(document.getElementsByClassName("closeX"));
+    let sidenav = Array.from(document.getElementsByClassName('sidenav'));
+    let main = Array.from(document.getElementsByClassName('mains'));
 
-x.forEach((element, i)=> {
-  element.addEventListener('click', (event)=> {
-    sidenav[i].style.width = "0";
-    sidenav[i].style.zIndex = order++;
-    mains.forEach(element => element.style.marginLeft = "0")
-  })
-})
+    x.forEach((element, i)=> {
+      element.addEventListener('click', (event)=> {
+        sidenav[i].style.width = "0";
+        sidenav[i].style.zIndex = order++;
+        mains.forEach(element => element.style.marginLeft = "0")
+      })
+    })
 
-</script>
+    </script>
 
 
 
