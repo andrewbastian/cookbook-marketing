@@ -29,7 +29,7 @@ a{
   }
 
   @media @tablet {
-    margin-left: 100px;
+    margin-top: 6rem;
   }
 }
 
@@ -103,6 +103,7 @@ h3 {
     margin-bottom: 10px;
     text-align: center;
     font-size: 6rem;
+    width: 100%;
   }
 }
 
@@ -123,11 +124,19 @@ h3 {
 .btn-center{
   .flexCenter();
 }
-button{
+
+button {
   .btn-mixin();
   margin-bottom: 3rem;
   margin-top: 3rem;
 }
+
+.btn-center a {
+  color: white;
+  text-decoration: none;
+  margin: 0px;
+}
+
 .fullImgTxt{
   position: relative;
   text-align: center;
@@ -164,6 +173,7 @@ position: absolute;
   font-size: 11.5rem;
 
   @media @phone {
-    font-size: 4rem;
+    font-size: 8rem;
+    width: 100%;
   }
 }
