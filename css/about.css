@@ -137,6 +137,7 @@ p {
   .h1Mission h1 {
     font-size: 8rem;
     margin-top: 20px;
+  }
 }
 
 
@@ -311,7 +312,6 @@ img {
   /* Place content 60px from the top */
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */
-
 }
 
 .profilebtn img {
@@ -341,10 +341,11 @@ img {
   font-size: 36px;
   margin-left: 50px;
 }
+
 .sidenav p{
   color: white;
-
 }
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
@@ -357,6 +358,7 @@ img {
     padding-top: 15px;
   }
 }
+
 footer {
   display: flex;
   justify-content: center;
