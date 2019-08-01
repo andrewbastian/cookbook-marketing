@@ -181,7 +181,7 @@ h5,
 .navbtn {
   font-family: 'Amatic SC', cursive;
   color: black;
-  text-shadow: 2px 2px #919A87;
+  text-shadow: 2px 2px #BA906D;
 }
 
 h1 {
@@ -215,9 +215,13 @@ p {
     margin: 20px auto;
   }
 }
+.h1Mission h1, p {
+  color: #F0EADF;
+}
+
 
 .backgroundColor{
-  background-color: #919A87;
+  background-color: #D1D3C8;
   padding-top: 3rem;
 }
 
@@ -306,7 +310,7 @@ p,
 }
 
 .h1Mission {
-  border-bottom: 1.5px solid #7B3D4C;
+  border-bottom: 1.5px dashed #D1D3C8;
   padding-bottom: 3rem;
   margin-bottom: 1rem;
   position: absolute;
@@ -314,7 +318,17 @@ p,
    left: 50%;
    transform: translate(-50%, -50%);
 }
-
+@media (max-width: 800px) {
+  .h1Mission{
+top:14%;
+width: 80%;
+  }
+}
+  @media (max-width: 500px) {
+    .h1Mission{
+      width: 100%;
+    }
+}
 
 img {
   width: 100%;
