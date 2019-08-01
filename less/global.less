@@ -22,16 +22,31 @@ font-family: 'Amatic SC', cursive;
 }
 
 h1{
-  font-size: 7rem;
+  font-size: 12rem;
   padding-bottom: 2rem;
   padding-top: 3rem;
+  font-weight: bold;
+
+  @media @phone {
+    font-size: 7rem;
+  }
+
+  @media @tablet {
+    font-size: 12rem;
+    text-align: center;
+  }
 }
 
 h2 {
   font-size: 4.5rem;
   
   @media @tablet {
-    font-size: 4.5rem;
+    font-size: 8rem;
+  }
+
+  @media @phone {
+    width: 75%;
+    text-align: center;
   }
 }
 
