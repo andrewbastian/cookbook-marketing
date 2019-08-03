@@ -467,5 +467,13 @@ button {
   .imgText h2 {
     font-size: 6rem;
     width: 100%;
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .imgText h2 {
+    font-size: 5rem;
+    text-align: center;
+    margin: 0;
   }
 }
