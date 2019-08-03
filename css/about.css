@@ -17,129 +17,46 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+	/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
 body {
   line-height: 1;
-
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none;
 }
@@ -157,35 +74,26 @@ html {
   font-size: 62.5%;
 }
 
-html,
-body {
+html, body {
   font-family: 'Open Sans Condensed', sans-serif;
   color: black;
-
 }
 
 @media (max-width: 500px) {
-
-  html,
-  body {
+  html, body {
     margin-right: 5px;
     margin-left: 5px;
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-.navbtn {
+h1, h2, h3, h4, h5, .navbtn {
   font-family: 'Amatic SC', cursive;
   color: black;
   text-shadow: 2px 2px #BA906D;
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   padding-bottom: 2rem;
   padding-top: 3rem;
 }
@@ -215,10 +123,6 @@ p {
     margin: 20px auto;
   }
 }
-.h1Mission h1, p {
-  color: #F0EADF;
-}
-
 
 .backgroundColor{
   background-color: #D1D3C8;
@@ -262,11 +166,17 @@ p {
 .navbtn {
   display: flex;
   justify-content: center;
-  /* padding-top: 3rem; */
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.overlay a:hover,
-.overlay a:focus {
+@media (max-width: 800px) {
+  .navbtn {
+    margin-bottom: 40px;
+  }
+}
+
+.overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
 }
 
@@ -302,9 +212,7 @@ a {
 }
 
 
-h1,
-p,
-.midPageTxt {
+h1, p, .midPageTxt {
   display: flex;
   justify-content: center;
 }
@@ -314,16 +222,35 @@ p,
   padding-bottom: 3rem;
   margin-bottom: 1rem;
   position: absolute;
-   top: 25%;
+   top: 55%;
    left: 50%;
    transform: translate(-50%, -50%);
 }
+
+.h1Mission h1 {
+  font-size: 18rem;
+  padding-bottom: 2rem;
+  padding-top: 10rem;
+}
+
+.h1Mission h1, p {
+  color: #F0EADF;
+  margin-top: 0;
+  text-align: center;
+}
+
 @media (max-width: 800px) {
   .h1Mission{
-top:14%;
-width: 80%;
+    top: 31%;
+    width: 80%;
+  }
+
+  .h1Mission h1 {
+    font-size: 10rem;
+    margin-top: 25rem;
   }
 }
+
   @media (max-width: 500px) {
     .h1Mission{
       width: 100%;
@@ -337,6 +264,7 @@ width: 80%;
       font-size: 1.2rem;
       padding-top: 8px;
     }
+
 }
 
 img {
@@ -344,14 +272,21 @@ img {
   border-radius: 23px;
 }
 .gf{
-  border-radius: 0;
+  border-radius: 2rem;
   position: relative;
   text-align: center;
   color: white;
-  border-top: 1.5px solid @1020;
-  padding-top: 3rem;
-  margin-bottom: 2rem;
+  border-top: 1.5px solid #1020;
+  width: 100%;
 }
+
+@media (max-width: 800px) {
+  .gf {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
 /* profile side  */
 .sidenav {
   height: 100%;
@@ -419,6 +354,7 @@ img {
     padding-top: 15px;
   }
 }
+
 footer {
   display: flex;
   justify-content: center;

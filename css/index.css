@@ -461,10 +461,24 @@ button {
   text-shadow: 2px 2px #000000;
   text-shadow: 3px 2px #000000;
   font-size: 11.5rem;
+  margin-top: 18rem;
+}
+@media (max-width: 800px) {
+  .imgText h2 {
+    margin: 0;
+  }
 }
 @media (max-width: 500px) {
   .imgText h2 {
     font-size: 6rem;
     width: 100%;
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .imgText h2 {
+    font-size: 5rem;
+    text-align: center;
+    margin: 0;
   }
 }
