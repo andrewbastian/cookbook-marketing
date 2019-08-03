@@ -1,5 +1,5 @@
 .overlay {
-  height: 0%;
+  height: 0;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -18,7 +18,7 @@
   text-align: center;
   margin-top: 0;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 
@@ -31,12 +31,14 @@
   flex-direction: row;
   transition: 0.3s;
 }
-span{
-.flexCenter();
-padding-top: 3rem;
+
+span {
+  .flexCenter();
+  padding-top: 3rem;
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:focus,
+.overlay a:hover {
   color: #f1f1f1;
 }
 
@@ -46,14 +48,19 @@ padding-top: 3rem;
   right: 45px;
   font-size: 60px;
 }
-
 @media @phone {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
+  .overlay {
+    overflow-y: auto;
+  }
+
+  .overlay a {
+    font-size: 20px;
+  }
+
   .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
 

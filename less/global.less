@@ -6,31 +6,34 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
-font-family: 'Open Sans Condensed', sans-serif;
+body,
+html {
+  font-family: 'Open Sans Condensed', sans-serif;
   color: black;
-
-@media @phone {
-  margin-right: 5px;
-  margin-left: 5px;
+  @media @phone {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
 }
-}
 
-h1, h2, h3, h4, h5 {
-font-family: 'Amatic SC', cursive;
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbtn {
+  font-family: 'Amatic SC', cursive;
   color: black;
 }
 
-h1{
+h1 {
   font-size: 12rem;
   padding-bottom: 2rem;
   padding-top: 3rem;
   font-weight: bold;
-
   @media @phone {
     font-size: 7rem;
   }
-
   @media @tablet {
     font-size: 12rem;
     text-align: center;
@@ -39,11 +42,9 @@ h1{
 
 h2 {
   font-size: 4.5rem;
-  
   @media @tablet {
     font-size: 8rem;
   }
-
   @media @phone {
     width: 75%;
     text-align: center;
@@ -57,7 +58,6 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
-
   @media @tablet {
     width: 85%;
     margin: 20px auto;

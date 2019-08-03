@@ -123,7 +123,6 @@ section {
 
 body {
   line-height: 1;
-
 }
 
 ol,
@@ -161,7 +160,6 @@ html,
 body {
   font-family: 'Open Sans Condensed', sans-serif;
   color: black;
-
 }
 
 @media (max-width: 500px) {
@@ -215,12 +213,12 @@ p {
     margin: 20px auto;
   }
 }
+
 .h1Mission h1, p {
   color: #F0EADF;
 }
 
-
-.backgroundColor{
+.backgroundColor {
   background-color: #D1D3C8;
   padding-top: 3rem;
 }
@@ -293,14 +291,12 @@ p {
   }
 }
 
-
 a {
   font-size: 2rem;
   padding-right: 2rem;
   text-decoration: none;
   color: #7B3D4C;
 }
-
 
 h1,
 p,
@@ -314,36 +310,41 @@ p,
   padding-bottom: 3rem;
   margin-bottom: 1rem;
   position: absolute;
-   top: 25%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 @media (max-width: 800px) {
-  .h1Mission{
-top:14%;
-width: 80%;
+  .h1Mission {
+    top: 14%;
+    width: 80%;
   }
 }
-  @media (max-width: 500px) {
-    .h1Mission{
-      width: 100%;
-      border-bottom: none;
-    }
-    .h1Mission h1{
-      font-size: 5rem;
-      padding-bottom: 3.5;
-    }
-    .h1Mission p{
-      font-size: 1.2rem;
-      padding-top: 8px;
-    }
+
+@media (max-width: 500px) {
+  .h1Mission {
+    width: 100%;
+    border-bottom: none;
+  }
+
+  .h1Mission h1 {
+    font-size: 5rem;
+    padding-bottom: 3.5;
+  }
+
+  .h1Mission p {
+    font-size: 1.2rem;
+    padding-top: 8px;
+  }
 }
 
 img {
   width: 100%;
   border-radius: 23px;
 }
-.gf{
+
+.gf {
   border-radius: 0;
   position: relative;
   text-align: center;
@@ -352,6 +353,7 @@ img {
   padding-top: 3rem;
   margin-bottom: 2rem;
 }
+
 /* profile side  */
 .sidenav {
   height: 100%;
@@ -373,7 +375,6 @@ img {
   /* Place content 60px from the top */
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */
-
 }
 
 .profilebtn img {
@@ -403,10 +404,11 @@ img {
   font-size: 36px;
   margin-left: 50px;
 }
-.sidenav p{
-  color: white;
 
+.sidenav p {
+  color: white;
 }
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
@@ -419,6 +421,7 @@ img {
     padding-top: 15px;
   }
 }
+
 footer {
   display: flex;
   justify-content: center;
