@@ -1,26 +1,40 @@
-.topnav{
-  .flexCenter();
-  overflow: hidden;
-  background-color: @1020;
+.overlay {
+  height: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
   position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 .topnav #mylinks{
   display: none;
 }
-.topnav a {
-  color: white:inherit;
-  padding: 1.4rem 1.6rem;
-  text-decoration: none;
-  font-size: 17px;
-  display:inline-block;
+
 }
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: black;
-  display: inline-block;
-  position: absolute;
-  // right: 0;
-  top: 0;
+
+span {
+  .flexCenter();
+  padding-top: 3rem;
+}
+
+.overlay a:focus,
+.overlay a:hover {
+  color: #f1f1f1;
 }
 
 /* Add a grey background color on mouse-over */
@@ -28,11 +42,20 @@
   background-color: #ddd;
   color: black;
 }
+@media @phone {
+  .overlay {
+    overflow-y: auto;
+  }
 
-/* Style the active link (or home/logo) */
-.active {
-  background-color: #4CAF50;
-  color: white;
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
 
 .navbtn {
