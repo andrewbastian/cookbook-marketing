@@ -317,13 +317,15 @@ p,
 
 @media (max-width: 800px) {
   .h1Mission {
-    top: 30%;
+    top: 14%;
     width: 80%;
   }
 }
 
 @media (max-width: 500px) {
   .h1Mission {
+  
+    width: 100%;
     border-bottom: none;
   }
 
