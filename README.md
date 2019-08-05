@@ -13,4 +13,4 @@ index.html: this page uses the less files for its style. The script for the nav 
 -A .closebtn uses JS:void(0) to keep the page from refreshing. This is the close btn for the navbar. It uses inline JS (bad practice). This could be changed by adding an ID to the close and open buttons.
 -.overlay-content sets the position and some other styling of the link to the about.html.
 
-h1Mission
+h1Mission aligns the h1 and p tag bellow.
