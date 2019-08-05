@@ -84,9 +84,9 @@
         <div class="mains" id="main">
           <h2>Spencer Summrville</h2>
 
-          <span class="profilebtn" id="spencer" style="font-size:30px;cursor:pointer">
-            <img src="img/fish.jpg" alt=""></span>
-          <!-- <div id="mySidenav" class="sidenav">
+          <span class="profilebtn" id="profile" style="font-size:30px;cursor:pointer">
+            <img src="img/P11104650.jpg" alt=""></span>
+          <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closeX" id="x">&times;</a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-google"></a>
@@ -95,7 +95,7 @@
           </div> -->
         </div>
       </div>
-
+<img src="img/line.gif" alt="">
 
       <footer>
 
@@ -139,7 +139,7 @@
         profiles.forEach((profile, i) => {
 //adding an event addEventListener to every picture. when there is a click addEventListener calls your function "event" - (object with some data about event)
           profile.addEventListener('click', (event) => {
-// 
+//
 document.getElementById('biotext').innerText = profileData[profile.id];
 //sidenav = array "i" indexes into array
             sidebar.style.width = "250px";

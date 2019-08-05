@@ -21,15 +21,10 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
+.topnav #mylinks{
+  display: none;
+}
 
-.overlay a {
-  padding: 0;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: flex;
-  flex-direction: row;
-  transition: 0.3s;
 }
 
 span {
@@ -42,11 +37,10 @@ span {
   color: #f1f1f1;
 }
 
-.overlay .closebtn {
-  position: absolute;
-  top: 2px;
-  right: 45px;
-  font-size: 60px;
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 @media @phone {
   .overlay {
