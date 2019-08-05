@@ -17,30 +17,107 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-	/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -48,15 +125,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -74,26 +156,34 @@ html {
   font-size: 62.5%;
 }
 
-html, body {
+html,
+body {
   font-family: 'Open Sans Condensed', sans-serif;
   color: black;
 }
 
 @media (max-width: 500px) {
-  html, body {
+
+  html,
+  body {
     margin-right: 5px;
     margin-left: 5px;
   }
 }
 
-h1, h2, h3, h4, h5, .navbtn {
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbtn {
   font-family: 'Amatic SC', cursive;
   color: black;
   text-shadow: 2px 2px #BA906D;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 7rem;
   padding-bottom: 2rem;
   padding-top: 3rem;
 }
@@ -124,7 +214,11 @@ p {
   }
 }
 
-.backgroundColor{
+.h1Mission h1, p {
+  color: #F0EADF;
+}
+
+.backgroundColor {
   background-color: #D1D3C8;
   padding-top: 3rem;
 }
@@ -166,17 +260,11 @@ p {
 .navbtn {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  /* padding-top: 3rem; */
 }
 
-@media (max-width: 800px) {
-  .navbtn {
-    margin-bottom: 40px;
-  }
-}
-
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
   color: #f1f1f1;
 }
 
@@ -203,7 +291,6 @@ p {
   }
 }
 
-
 a {
   font-size: 2rem;
   padding-right: 2rem;
@@ -211,8 +298,9 @@ a {
   color: #7B3D4C;
 }
 
-
-h1, p, .midPageTxt {
+h1,
+p,
+.midPageTxt {
   display: flex;
   justify-content: center;
 }
@@ -222,69 +310,47 @@ h1, p, .midPageTxt {
   padding-bottom: 3rem;
   margin-bottom: 1rem;
   position: absolute;
-   top: 55%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-}
-
-.h1Mission h1 {
-  font-size: 18rem;
-  padding-bottom: 2rem;
-  padding-top: 10rem;
-}
-
-.h1Mission h1, p {
-  color: #F0EADF;
-  margin-top: 0;
-  text-align: center;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 800px) {
-  .h1Mission{
-    top: 31%;
+  .h1Mission {
+    top: 30%;
     width: 80%;
-  }
-
-  .h1Mission h1 {
-    font-size: 10rem;
-    margin-top: 25rem;
   }
 }
 
-  @media (max-width: 500px) {
-    .h1Mission{
-      width: 100%;
-      border-bottom: none;
-    }
-    .h1Mission h1{
-      font-size: 5rem;
-      padding-bottom: 3.5;
-    }
-    .h1Mission p{
-      font-size: 1.2rem;
-      padding-top: 8px;
-    }
+@media (max-width: 500px) {
+  .h1Mission {
+    border-bottom: none;
+  }
 
+  .h1Mission h1 {
+    font-size: 5rem;
+    padding-bottom: 3.5;
+  }
+
+  .h1Mission p {
+    font-size: 1.2rem;
+    padding-top: 8px;
+  }
 }
 
 img {
   width: 100%;
   border-radius: 23px;
 }
-.gf{
-  border-radius: 2rem;
+
+.gf {
+  border-radius: 0;
   position: relative;
   text-align: center;
   color: white;
-  border-top: 1.5px solid #1020;
-  width: 100%;
-}
-
-@media (max-width: 800px) {
-  .gf {
-    width: 100%;
-    padding: 1rem;
-  }
+  border-top: 1.5px solid @1020;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 /* profile side  */
@@ -308,7 +374,6 @@ img {
   /* Place content 60px from the top */
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */
-
 }
 
 .profilebtn img {
@@ -338,10 +403,11 @@ img {
   font-size: 36px;
   margin-left: 50px;
 }
-.sidenav p{
-  color: white;
 
+.sidenav p {
+  color: white;
 }
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;

@@ -1,5 +1,5 @@
 .overlay {
-  height: 0%;
+  height: 0;
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -18,42 +18,43 @@
   text-align: center;
   margin-top: 0;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: space-evenly;
 }
-
-.overlay a {
-  padding: 0;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: flex;
-  flex-direction: row;
-  transition: 0.3s;
-}
-span{
-.flexCenter();
-padding-top: 3rem;
+.topnav #mylinks{
+  display: none;
 }
 
-.overlay a:hover, .overlay a:focus {
+}
+
+span {
+  .flexCenter();
+  padding-top: 3rem;
+}
+
+.overlay a:focus,
+.overlay a:hover {
   color: #f1f1f1;
 }
 
-.overlay .closebtn {
-  position: absolute;
-  top: 2px;
-  right: 45px;
-  font-size: 60px;
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
-
 @media @phone {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
+  .overlay {
+    overflow-y: auto;
+  }
+
+  .overlay a {
+    font-size: 20px;
+  }
+
   .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
 

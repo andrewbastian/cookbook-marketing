@@ -1,24 +1,16 @@
 # Secret Family Recipes Cookbook
 
-## Description
+index.html: this page uses the less files for its style. The script for the nav is in index.js. -needs async.
 
-Anyone can go out and buy a cookbook these days, but I want a place to
-store all my secret family recipes, handed down from generation to generation.
-The little cards my grandma wrote the recipes on in her beautiful cursive are
-getting lost or are hard to read. I need somewhere secure to keep my recipes
-with me at all times!
-​
-## MVP
+-.body wraps the whole page. Line-height, font-family, and color is set here. It is also used for margins @ 500px.
 
-- Onboarding process for a new user
-- Ability to enter a new recipe, including title, source (i.e. Grandma Ethel),
-  ingredients, instructions, and category (dinner, chicken, dessert, pasta, etc.)
-  and edit or delete it later.
-- Homepage to view all entered recipes.
-- Ability to search for recipes by title or tagged categories
+-.navBox wraps the whole top nav bar and ends before the .navbtn. .navBox centers the text. Adds padding and margin. @500px it changes the top margin.
 
-## Stretch
+-#myNav is the id used for DOM function
 
-- Ability to upload a picture of the original recipe along with the recipe entry.
-- By default all recipes uploaded can only be viewed by the person loggin in,
-  a stretch goal would add the ability to invite someone with the link to view the recipe.
+-.overlay aligns content inside of the nav and sets the background of the nav bar.
+
+-A .closebtn uses JS:void(0) to keep the page from refreshing. This is the close btn for the navbar. It uses inline JS (bad practice). This could be changed by adding an ID to the close and open buttons.
+-.overlay-content sets the position and some other styling of the link to the about.html.
+
+h1Mission aligns the h1 and p tag bellow.
